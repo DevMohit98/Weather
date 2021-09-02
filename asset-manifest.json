@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Weather.github.io/Weather/static/css/main.ac0eaec1.chunk.css",
-    "main.js": "/Weather.github.io/Weather/static/js/main.c5e17b41.chunk.js",
-    "main.js.map": "/Weather.github.io/Weather/static/js/main.c5e17b41.chunk.js.map",
-    "runtime-main.js": "/Weather.github.io/Weather/static/js/runtime-main.b71ea999.js",
-    "runtime-main.js.map": "/Weather.github.io/Weather/static/js/runtime-main.b71ea999.js.map",
-    "static/js/2.991e091e.chunk.js": "/Weather.github.io/Weather/static/js/2.991e091e.chunk.js",
-    "static/js/2.991e091e.chunk.js.map": "/Weather.github.io/Weather/static/js/2.991e091e.chunk.js.map",
-    "static/js/3.75793e74.chunk.js": "/Weather.github.io/Weather/static/js/3.75793e74.chunk.js",
-    "static/js/3.75793e74.chunk.js.map": "/Weather.github.io/Weather/static/js/3.75793e74.chunk.js.map",
-    "index.html": "/Weather.github.io/Weather/index.html",
-    "static/css/main.ac0eaec1.chunk.css.map": "/Weather.github.io/Weather/static/css/main.ac0eaec1.chunk.css.map",
-    "static/js/2.991e091e.chunk.js.LICENSE.txt": "/Weather.github.io/Weather/static/js/2.991e091e.chunk.js.LICENSE.txt"
+    "main.css": "/Weather/static/css/main.ac0eaec1.chunk.css",
+    "main.js": "/Weather/static/js/main.c5e17b41.chunk.js",
+    "main.js.map": "/Weather/static/js/main.c5e17b41.chunk.js.map",
+    "runtime-main.js": "/Weather/static/js/runtime-main.dd3cbc19.js",
+    "runtime-main.js.map": "/Weather/static/js/runtime-main.dd3cbc19.js.map",
+    "static/js/2.991e091e.chunk.js": "/Weather/static/js/2.991e091e.chunk.js",
+    "static/js/2.991e091e.chunk.js.map": "/Weather/static/js/2.991e091e.chunk.js.map",
+    "static/js/3.75793e74.chunk.js": "/Weather/static/js/3.75793e74.chunk.js",
+    "static/js/3.75793e74.chunk.js.map": "/Weather/static/js/3.75793e74.chunk.js.map",
+    "index.html": "/Weather/index.html",
+    "static/css/main.ac0eaec1.chunk.css.map": "/Weather/static/css/main.ac0eaec1.chunk.css.map",
+    "static/js/2.991e091e.chunk.js.LICENSE.txt": "/Weather/static/js/2.991e091e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b71ea999.js",
+    "static/js/runtime-main.dd3cbc19.js",
     "static/js/2.991e091e.chunk.js",
     "static/css/main.ac0eaec1.chunk.css",
     "static/js/main.c5e17b41.chunk.js"
