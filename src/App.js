@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import "./App.css";
+import City from "./Component/City";
+import MoreData from "./Component/MoreData";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="row m-4 ">
+      <div className="col-lg-6 col-12 ">
+        <div className="container p-3">
+          <div className="city-temp">
+            <City />
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-6 col-12">
+        <div className="row">
+          <div className="container p-4">
+            <div className="col-12">
+              <div className="more-data">
+                <MoreData />
+              </div>
+            </div>
+            <div className="col-12">
+              <div className="forcast"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
-
+};
 export default App;

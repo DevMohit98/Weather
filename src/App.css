@@ -1,38 +1,212 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --bg: #eceff1;
+  --row-bg: #f5f5f5;
+  --row-border-color: #f5f5f5;
+  --section-bg: #fafafa;
+  --section-border-color: #fafafa;
+  --font: "Poppins", sans-serif;
+  --row-width: 100wh;
+  --row-height: auto;
+  --inner-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.16);
+  --drop-shadow: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.16));
+  --main-Color: #424242;
+  --font-medium: 500;
+  --font-regular: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg);
+}
+.row {
+  background-color: var(--row-bg);
+  border-color: var(--row-border-color);
+  height: var(--row-height);
+  width: var(--row-width);
+  border-radius: 10px;
+}
+
+.city-temp {
+  background-color: var(--section-bg);
+  border-color: var(--section-border-color);
+  border-radius: 10px;
+  width: calc(var(--row-width) - 10wh);
+  height: 520px;
+  border-color: var(--section-border-color);
+  box-shadow: var(--inner-shadow);
+  filter: var(--drop-shadow);
+}
+.more-data {
+  background-color: var(--section-bg);
+  border-color: var(--section-border-color);
+  border-radius: 10px;
+  width: calc(var(--row-width) - 10wh);
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--inner-shadow);
+  filter: var(--drop-shadow);
+}
+.forcast {
+  background-color: var(--section-bg);
+  border-color: var(--section-border-color);
+  border-radius: 10px;
+  width: calc(var(--row-width) - 10wh);
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: var(--inner-shadow);
+  filter: var(--drop-shadow);
+}
+.input-group {
+  width: 80%;
+}
+.form-control {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  font-family: var(--font);
+  background-color: var(--section-bg);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: var(--main-color);
+  border-radius: 0px;
+}
+.form-control:focus {
+  background-color: var(--section-bg);
+  box-shadow: none;
+  border-bottom-color: var(--main-color);
+}
+.input-group-text {
+  background-color: var(--section-bg);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px;
+  border-bottom-color: var(--main-Color);
+}
+.search-icon {
+  width: 30px;
+  height: 30px;
+  color: var(--main-Color);
+}
+.time-date h1 {
+  background-color: var(--section-bg);
+  width: auto;
+  font-family: var(--font);
+  color: var(--main-Color);
+  font-size: 1.8rem;
+  font-weight: var(--font-regular);
+}
+.temprature {
+  background-color: var(--section-bg);
+  font-size: 4.2rem;
+  font-weight: var(--font-regular);
+  font-family: var(--font);
+  color: var(--main-Color);
+  position: relative;
+}
+
+.weather-discription {
+  background-color: var(--section-bg);
+  font-size: 2.1rem;
+  font-weight: var(--font-meidum);
+  font-family: var(--font);
+  color: var(--main-Color);
+}
+.weather-more-data {
+  font-size: 1.5rem;
+  font-family: var(--font);
+  font-weight: var(--font-medium);
+  color: var(--main-Color);
+}
+.weather-more-sub-data {
+  font-size: 1.5rem;
+  font-family: var(--font);
+  font-weight: var(--font-regular);
+  color: var(--main-Color);
+}
+.icon-size {
+  width: 80px;
+  height: 80px;
+  color: var(--main-Color);
+  border-color: #e0e0e0;
+}
+.column-1 h1 {
   text-align: center;
+  font-size: 1.8rem;
+  font-family: var(--font);
+  font-weight: var(--font-regular);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.column-2 h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: var(--font);
+  font-weight: var(--font-regular);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.column-3 h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: var(--font);
+  font-weight: var(--font-regular);
+}
+@media (max-width: 576px) {
+  .form-control {
+    font-size: 1rem;
+  }
+  .search-icon {
+    width: 19px;
+    height: 19px;
+    color: var(--main-Color);
+  }
+  .time-date h1 {
+    font-size: 1.3rem;
+  }
+  .temprature {
+    font-size: 2rem;
+  }
+  .weather-discription {
+    font-size: 1.5rem;
+  }
+  .weather-stats {
+    flex-direction: column;
+  }
+  .weather-more-data,
+  .weather-more-sub-data {
+    font-size: 1rem;
+  }
+  .humidity,
+  .wind-speed {
+    padding: 15px;
+  }
+  .more-data {
+    height: auto;
+  }
+  .icon-size {
+    width: 60px;
+    height: 60px;
+  }
+  .column-1 h1 {
+    font-size: 1.2rem;
+  }
+  .column-2 h1 {
+    font-size: 1.2rem;
+  }
+  .column-3 h1 {
+    font-size: 1.2rem;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 576px) and (max-width: 786px) {
+  .icon-size {
+    width: 60px;
+    height: 60px;
   }
-  to {
-    transform: rotate(360deg);
+  .column-1,
+  .column-2,
+  .column-3 h1 {
+    font-size: 1.5rem;
   }
 }
