@@ -50,16 +50,17 @@ body {
   box-shadow: var(--inner-shadow);
   filter: var(--drop-shadow);
 }
-.forcast {
+.forcaste-detail {
   background-color: var(--section-bg);
   border-color: var(--section-border-color);
   border-radius: 10px;
   width: calc(var(--row-width) - 10wh);
-  height: 300px;
+  height: auto;
   border-radius: 10px;
   margin-top: 20px;
   box-shadow: var(--inner-shadow);
   filter: var(--drop-shadow);
+  overflow-x: auto;
 }
 .input-group {
   width: 80%;
@@ -107,7 +108,6 @@ body {
   font-weight: var(--font-regular);
   font-family: var(--font);
   color: var(--main-Color);
-  position: relative;
 }
 
 .weather-discription {
@@ -117,7 +117,8 @@ body {
   font-family: var(--font);
   color: var(--main-Color);
 }
-.weather-more-data {
+.weather-more-data,
+.forecast-temp {
   font-size: 1.5rem;
   font-family: var(--font);
   font-weight: var(--font-medium);
@@ -153,6 +154,33 @@ body {
   font-family: var(--font);
   font-weight: var(--font-regular);
 }
+.forecast {
+  width: 300px;
+  height: 300px;
+  background-color: var(--section-bg);
+  border-color: var(--section-border-color);
+  box-shadow: var(--inner-shadow);
+  filter: var(--drop-shadow);
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.forcaste-detail::-webkit-scrollbar {
+  width: 5px;
+}
+.forecaste-time h1 {
+  width: 100%;
+  font-family: var(--font);
+  color: var(--main-Color);
+  font-size: 1.5rem;
+  font-weight: var(--font-regular);
+}
+.forcast-discription {
+  font-size: 1.8rem;
+  font-weight: var(--font-meidum);
+  font-family: var(--font);
+  color: var(--main-Color);
+}
+
 @media (max-width: 576px) {
   .form-control {
     font-size: 1rem;
@@ -197,6 +225,17 @@ body {
   }
   .column-3 h1 {
     font-size: 1.2rem;
+  }
+  .forecast {
+    width: 300px;
+    height: 300px;
+  }
+  .forecaste-time h1 {
+    font-size: 1.2rem;
+  }
+  .forcast-discription {
+    font-size: 1rem;
+    text-align: center;
   }
 }
 @media (min-width: 576px) and (max-width: 786px) {
